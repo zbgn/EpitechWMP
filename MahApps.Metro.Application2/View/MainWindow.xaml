@@ -1,0 +1,459 @@
+﻿<Controls:MetroWindow x:Class="MyWindowsMediaPlayer.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+ 
+                      Height="768"
+                      Width="1024"
+                      WindowState="Normal"
+                      Icon="../Images\appbar.monitor.play.png"
+                      BorderBrush="{DynamicResource AccentColorBrush}"
+                      BorderThickness="1"
+                      WindowStartupLocation="CenterScreen" MinHeight="506" MinWidth="900"  ResizeMode="CanResize" Closed="MetroWindow_Closed"
+                      >
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Click="Open_Info">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Images\appbar.information.circle.png" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+    <Controls:MetroWindow.LeftWindowCommands>
+        <Controls:WindowCommands>
+            <StackPanel Name="menuHolder" Orientation="Horizontal">
+                <TextBlock Padding="10,5,10,5" Text="My Windows Media Player"></TextBlock>
+                <Menu   Name="menu1">
+                    <MenuItem Header="Fichier"    Height="32.292" RenderTransformOrigin="0.56,0.37">
+                        <MenuItem Header="Ouvrir" Click="OpenFile" >
+                            <MenuItem.Icon>
+                                <Image Source="../Images\appbar.folder.open.png" Width="32" Height="32"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Library" Click="Click_OpenLibrary">
+                            <MenuItem.Icon>
+                            <Image Source="../Images/appbar.book.list.png" Width="32" Height="32" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Importer" Click="ImportFile" >
+                            <MenuItem.Icon>
+                                <Image Source="../Images\appbar.add.png" Width="32" Height="32" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Flux audio" Click="MenuItem_Click" >
+                            <MenuItem.Icon>
+                                <Image Source="../Images\appbar.music.live.png" Width="32" Height="32" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                            <MenuItem Header="Autres" >
+                            <MenuItem.Icon>
+                                <Image Source="../Images\appbar.cog.png" Width="32" Height="32" />
+                            </MenuItem.Icon>
+                            <MenuItem Header="Télécharger les codecs vidéos et audios" Click="DL_codecs">
+                                <MenuItem.Icon>
+                                    <Image Source="../Images\appbar.download.png" Width="32" Height="32" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Fermer"  Click="Exit" >
+                            <MenuItem.Icon>
+                                <Image Source="../Images\appbar.close.png" Width="32" Height="32" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.LeftWindowCommands>
+    <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="layoutRoot" >
+
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatSlider.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedTabControl.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.ComboBox.xaml" />
+                    
+                </ResourceDictionary.MergedDictionaries>
+                <Style TargetType="ToggleButton" BasedOn="{StaticResource MetroToggleButton}" />
+                <Style TargetType="ComboBox" BasedOn="{StaticResource MetroComboBox}" />
+                <Style TargetType="ComboBoxItem" BasedOn="{StaticResource MetroComboBoxItem}" />
+                <Style x:Key="MetroListView" TargetType="{x:Type ListView}">
+                    <Setter Property="BorderBrush" Value="{DynamicResource HighlightBrush}" />
+                    <Setter Property="BorderThickness" Value="0 1 0 0" />
+                    <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+                    <Setter Property="AlternationCount" Value="2" />
+                </Style>
+
+                <Style x:Key="VirtualisedMetroListView" TargetType="{x:Type ListView}" BasedOn="{StaticResource MetroListView}">
+                    <Setter Property="VirtualizingStackPanel.IsVirtualizing" Value="True" />
+                    <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling" />
+                    <Setter Property="ScrollViewer.IsDeferredScrollingEnabled" Value="True" />
+                    <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+                </Style>
+
+                <Style x:Key="MetroListViewItem" TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                    <Setter Property="MinHeight" Value="25" />
+                    <Setter Property="Margin" Value="0,0,0,0" />
+                    <Setter Property="Border.BorderBrush" Value="{DynamicResource Gray3}" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                <Border x:Name="Bd" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                                    <Grid>
+                                        <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                        <ContentPresenter x:Name="contentPresenter" Visibility="Collapsed" />
+                                    </Grid>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="GridView.ColumnCollection" Value="{x:Null}">
+                                        <Setter TargetName="contentPresenter" Property="Visibility" Value="Visible"/>
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="true">
+                                        <Setter TargetName="Bd" Property="BorderBrush" Value="#FF143c65" />
+                                        <Setter Property="Background" TargetName="Bd" Value="{DynamicResource AccentColorBrush}"></Setter>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="Bd" Property="Background">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="{DynamicResource AccentColor3}" />
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="IsSelected" Value="true" />
+                                            <Condition Property="Selector.IsSelectionActive" Value="True" />
+                                        </MultiTrigger.Conditions>
+                                        <Setter Property="Background" TargetName="Bd">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="{DynamicResource AccentColor2}" />
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="BorderBrush" TargetName="Bd" Value="#FF143c65" />
+                                    </MultiTrigger>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="IsSelected" Value="True" />
+                                            <Condition Property="Selector.IsSelectionActive" Value="False" />
+                                        </MultiTrigger.Conditions>
+                                        <Setter Property="Background" TargetName="Bd">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="{DynamicResource AccentColor2}" />
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="BorderBrush" TargetName="Bd" Value="#FF143c65" />
+                                    </MultiTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                </Style>
+                <Style x:Key="NonSelectableListViewContainerStyle" TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                    <Setter Property="MinHeight" Value="25" />
+                    <Setter Property="Margin" Value="0,0,0,0" />
+                    <Setter Property="IsTabStop" Value="False" />
+                    <Setter Property="Border.BorderBrush" Value="{DynamicResource Gray3}" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                <Border x:Name="Bd"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding Border.BorderThickness}"
+                            SnapsToDevicePixels="true">
+                                    <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="Bd" Property="Background" Value="#e0eff8" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="{DynamicResource AlternateRow1BackgroundBrush}" />
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="{DynamicResource AlternateRow2BackgroundBrush}" />
+                            <Setter Property="Border.BorderThickness" Value="0 1 0 1" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </ResourceDictionary>
+        </Grid.Resources>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup"/>
+        </VisualStateManager.VisualStateGroups>
+
+
+        <Grid x:Name="control"  VerticalAlignment="Stretch" Visibility="{Binding Path=IsLocal, Converter={StaticResource BooleanToVisibilityConverter}}" HorizontalAlignment="Stretch" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Margin="0,0,0,2.027"  >
+
+            <Button Padding="0" 
+        			Margin="-300,7,0,0"
+        			Width="30" Height="30" VerticalAlignment="Top" Click="ImportMP3" HorizontalAlignment="Center" d:LayoutOverrides="Width">
+                <Image Source="../Images\appbar.music.png" OpacityMask="Black"  />
+            </Button>
+            <Button Padding="0"
+        			Margin="-200,7,0,0"
+        			Width="30" Height="30" VerticalAlignment="Top" Click="ImportVideo" HorizontalAlignment="Center" d:LayoutOverrides="Width">
+                <Image Source="../Images\appbar.film.list.png" OpacityMask="Black" />
+            </Button>
+            <Button Padding="0"
+        			Margin="-100,7,0,0"
+        			Width="30" Height="30" VerticalAlignment="Top" Click="ImportImage" HorizontalAlignment="Center" d:LayoutOverrides="Width">
+                <Image Source="../Images\appbar.image.png" OpacityMask="Black" />
+            </Button>
+
+            <Label HorizontalAlignment="Right" x:Name="recherche" VerticalAlignment="Top" Margin="0,10,350,0" Width="100" Height="Auto">
+                Rechercher par:
+            </Label>
+            <Controls:SplitButton
+                x:Name="Filter_Search"
+                ItemsSource="{Binding}" Height="26" VerticalAlignment="Top" Margin="0,10,200,0" HorizontalAlignment="Right" Width="128" />
+
+            <TextBox x:Name="search" Controls:TextBoxHelper.Watermark="Rechercher"  Height="26" HorizontalAlignment="Right" VerticalAlignment="Top" TextChanged="Text_Update" Margin="0,10,2,0" Width="162" />
+
+            <Controls:MetroAnimatedTabControl Controls:TabControlHelper.IsUnderlined="True"  VerticalContentAlignment="Top" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionChanged="MetroAnimatedTabControl_SelectionChanged" >
+                <TabItem x:Name ="TabM" Header="Musique" Foreground="{DynamicResource WhiteBrush}" >
+                    <Grid  x:Name="contentM" Margin="0,-1,0,0" Height="Auto" Width="Auto" VerticalAlignment="Stretch" >
+                        <MediaElement x:Name="musiquePlayer" Width="Auto" Height="Auto"  MediaOpened="mediaElement1_MediaOpened" MouseDown="MPlayer_MouseDown" LoadedBehavior="Manual" Stretch="UniformToFill" Visibility="Hidden" MediaEnded="musiquePlayer_MediaEnded"/>
+                        <ListView  x:Name="ListM" Width="Auto" ItemsSource="{Binding}" Margin="0,0,166,293" SelectionChanged="ListM_SelectionChanged" ScrollViewer.CanContentScroll="True" KeyDown="ListM_KeyDown"  >
+                            <ListView.ItemContainerStyle>
+                                <Style BasedOn="{StaticResource {x:Type ListViewItem}}" TargetType="{x:Type ListViewItem}"/>
+                            </ListView.ItemContainerStyle>
+                            <ListView.View>
+                                <GridView AllowsColumnReorder="True" >
+                                    <GridViewColumn  Header="" Width="Auto" >
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Image x:Name="IconImage" Source="{Binding IconUri}" Panel.ZIndex="2" Width="15" Height="15"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Title}" Width="100">
+                                        <GridViewColumnHeader Tag="Titre" Click="SortMyMP3" Content="Titre"/>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Composer}" Width="70" >
+                                        <GridViewColumnHeader Tag="Artiste" Click="SortMyMP3" Content="Artiste"/>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Length}"  Width="50" >
+                                        <GridViewColumnHeader Tag="Durée" Click="SortMyMP3" Content="Durée"/>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Album}" Width="70" >
+                                        <GridViewColumnHeader Tag="Album" Click="SortMyMP3" Content="Album"/>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+
+
+                        </ListView>
+                        <Grid x:Name="playlist" Margin="0,0,0,0" VerticalAlignment="Top" Height="auto"  HorizontalAlignment="Right" Width="166" d:LayoutOverrides="Width, LeftMargin, RightMargin">
+                            <Controls:SplitButton  Grid.Row="0" SelectionChanged="Change_Playlist"
+    
+                                HorizontalContentAlignment="Left"
+                                VerticalContentAlignment="Center"
+                                 x:Name="Playlist_list"
+                                SelectedIndex="2"
+                                ItemsSource="{Binding}"
+                                DisplayMemberPath="Title" Height="26" VerticalAlignment="Top"  />
+                            <StackPanel Margin="0,50,0,0">
+                                <Button Style="{StaticResource AccentedSquareButtonStyle}" Height="30" Click="Import_playlist" HorizontalAlignment="Left" Width="150"  >
+                                    Importer une playlist
+                                </Button>
+
+
+                                <Button 
+                            		 Style="{StaticResource AccentedSquareButtonStyle}" Width="150" Height="30" Margin="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Export_playlist">
+                                    Exporter une playlist
+                                </Button>
+                  
+                            </StackPanel>
+
+                        </Grid>
+                        <Grid x:Name="info" Width="Auto" HorizontalAlignment="Stretch"  Background="AntiqueWhite" Height="231" VerticalAlignment="Bottom" Margin="0,0,0,62" >
+                            <Border BorderBrush="Black" BorderThickness="1"/>
+                            <Border BorderThickness="1" BorderBrush="#FF000000" Height="150" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="84,48,0,33">
+                                <Image x:Name="ImageMP3" Source="{Binding imgUri}" Height="150" Width="150" Margin="0,0,0,0" />
+                            </Border>
+                            <Label x:Name="Label_Titre" Content="Titre : " Margin="318,0,0,158" Height="30"  VerticalAlignment="Bottom"/>
+                            <Label x:Name="Label_Artiste" Content="Artiste : " Margin="318,0,0,123" Height="30" VerticalAlignment="Bottom"/>
+                            <Label x:Name="Label_Album" Content="Album : " Margin="318,0,0,88" Height="30" VerticalAlignment="Bottom"/>
+                            <Label x:Name="Label_Duree" Content="Durée : " Margin="318,0,0,53" Height="30" VerticalAlignment="Bottom"/>
+                            <Label x:Name="Label_Taille" Content="Taille (ko) : " Margin="318,0,0,18" Height="30" VerticalAlignment="Bottom"/>
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name ="TabV" Header="Vidéo" >
+
+                    <Grid  x:Name="contentV" Margin="0,0,0,0" Height="Auto" Width="Auto" >
+                        <ListView x:Name="ListV" Width="Auto"  VerticalAlignment="Top" ItemsSource="{Binding}" Margin="0,0,0,0" SelectionChanged="ListV_SelectionChanged" KeyDown="ListV_KeyDown" Height="Auto" MaxHeight="200" >
+                            <ListView.View>
+                                <GridView AllowsColumnReorder="True" >
+                                    <GridViewColumn DisplayMemberBinding="{Binding TitleV}" Width="100" >
+                                        <GridViewColumn.Header>
+                                            <GridViewColumnHeader Tag="Titre"  Click="SortMyVideo">Titre</GridViewColumnHeader>
+                                        </GridViewColumn.Header>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding LengthV}" Width="60" >
+                                        <GridViewColumn.Header>
+                                            <GridViewColumnHeader Tag="Durée"  Click="SortMyVideo">Durée</GridViewColumnHeader>
+                                        </GridViewColumn.Header>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Image x:Name="backVideo" Source="../Images/importVideo.png" MaxHeight="350" VerticalAlignment="Center"/>
+                        <Viewbox x:Name="centrer" Width="Auto" Height="Auto" Stretch="UniformToFill" StretchDirection="Both">
+                            
+                            <MediaElement x:Name="videoPlayer" Width="Auto" Height="Auto" Panel.ZIndex="1" MediaOpened="videoOpened" MouseDown="MPlayer_MouseDown" LoadedBehavior="Manual" Stretch="UniformToFill" MediaEnded="videoPlayer_MediaEnded" />
+                        </Viewbox>
+                    </Grid>
+
+                </TabItem>
+                <TabItem x:Name ="TabI" Header="Image" >
+                    <Grid  x:Name="contentI" Margin="0,0,0,0" Height="Auto" Width="Auto" >
+   
+                        <ListView x:Name="ListI" Width="Auto" ItemsSource="{Binding}" Margin="0,0,0,0" SelectionChanged="ListI_SelectionChanged" KeyDown="ListI_KeyDown" VerticalAlignment="Top" Height="auto" MaxHeight="150">
+                            <ListView.View>
+                                <GridView AllowsColumnReorder="True" >
+                                    <GridViewColumn DisplayMemberBinding="{Binding TitleI}" Width="100">
+                                        <GridViewColumn.Header>
+                                            <GridViewColumnHeader Tag="Titre" Click="SortMyImage">Titre</GridViewColumnHeader>
+                                        </GridViewColumn.Header>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding FormatI}" Width="60">
+                                        <GridViewColumn.Header>
+                                            <GridViewColumnHeader Tag="Format" Click="SortMyImage">Format</GridViewColumnHeader>
+                                        </GridViewColumn.Header>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding SizeI}" Width="60">
+                                        <GridViewColumn.Header>
+                                            <GridViewColumnHeader Tag="Taille" Click="SortMyImage">Taille (ko) :</GridViewColumnHeader>
+                                        </GridViewColumn.Header>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Image x:Name="backImage" Margin="0,20,0,0"  Source="../Images/importImage.png" MaxHeight="350" VerticalAlignment="Center"/>
+                        <Grid x:Name="img" Margin="0,20,0,0" Width="Auto" MaxHeight="400"  HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+                            <Image x:Name="imageFile" Margin="0,0,0,0" />
+                        </Grid>
+                    </Grid>
+                </TabItem>
+            </Controls:MetroAnimatedTabControl>
+
+        </Grid>
+        <Grid x:Name="Player_Control" Margin="0,0,0,0"  MouseEnter="ButtonGrid_OnMouseEnter" MouseLeave="ButtonGrid_OnMouseLeave" HorizontalAlignment="Stretch" Width="Auto" Height="40" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="173*"/>
+                <ColumnDefinition Width="300*"/>
+                <ColumnDefinition Width="34*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" 
+        		Orientation="Horizontal" Margin="0,-22,125,0" VerticalAlignment="Center" Width="Auto" d:LayoutOverrides="Width">
+                <Separator />
+                <Button Padding="0"
+        			Margin="15, 0, 0, 0"
+        			Width="30" Height="30" Click="button_play">
+                    <Image Source="../Images\appbar.control.play.png" OpacityMask="Black" />
+                </Button>
+                <Button  Padding="0"
+        			Margin="5, 0, 0, 0"
+        			Width="30" Height="30" Click="button_pause" >
+                    <Image Source="../Images\appbar.control.pause.png" />
+                </Button>
+                <Button  Padding="0"
+        			Margin="5, 0, 0, 0"
+        			Width="30" Height="30" Click="button_stop">
+                    <Image Source="../Images\appbar.control.stop.png" />
+                </Button>
+
+                <Button Padding="0"
+        			Margin="5, 0, 0, 0" Height="30"
+        			ToolTip="Previous song"
+        			Command="{Binding PreviousSongCommand}" Click="PlayPreviousSong">
+                    <Image Source="../Images\appbar.navigate.previous.png" />
+                </Button>
+                <Button Padding="0"
+        			Margin="5, 0, 0, 0"
+        			ToolTip="Next song" Height="30"
+        			Command="{Binding NextSongCommand}" Click="PlayNextSong">
+                    <Image Source="../Images\appbar.navigate.next.png" />
+                </Button>
+                <Button  Padding="0" Height="30" Margin="5, 0, 0, 0" 
+        			Click="Random_Set">
+                    <Image x:Name="RandomIMG"  Source="../Images\appbar.refresh.png" />
+                </Button>
+
+            </StackPanel>
+            <StackPanel
+        		Margin="-114.13,-12,0,15.7"
+        		Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" Height="15" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="2">
+                <Button Style="{StaticResource VolumeButtonStyle}" x:Name="mute" Click="button_mute"
+        			ToolTip="Mute"
+        			Command="{Binding MuteCommand}"
+        			VerticalAlignment="Center" Margin="0,-4,0,0">
+                    <Image x:Name="MuteIMG"  Source="../Images\appbar.sound.1.png" Margin="0,0,0,0" />
+                </Button>
+                <Slider  VerticalAlignment
+                    ="Center"
+        			HorizontalAlignment
+                    ="Left"
+        			Width
+                    ="132"
+        			TickPlacement
+                    ="BottomRight"
+        			TickFrequency
+                    ="25"
+        			IsMoveToPointEnabled="True"
+        			Maximum="1" x:Name="Volume_slider" ValueChanged="slider1_ValueChanged" 
+        			Value="{Binding Volume}" Margin="0,0,0,0" Style="{DynamicResource FlatSlider}" Height="10" />
+                <Button Style="{StaticResource VolumeButtonStyle}"
+        			ToolTip="Unmute"
+        			Command="{Binding UnMuteCommand}"
+        			VerticalAlignment="Center" Margin="0,-4,0,0">
+                    <Image Source="../Images\appbar.sound.3.png" Margin="0,0,0,0" />
+                </Button>
+            </StackPanel>
+            <StackPanel
+        		
+        		Margin="-112.667,0,144.6,0" VerticalAlignment="Top" Grid.Column="1">
+                <Slider Style="{DynamicResource FlatSlider}"
+        		
+            		IsMoveToPointEnabled="True" x:Name="slider" ValueChanged="slider_ValueChanged" Delay="500" VerticalAlignment="Center" Interval="33" Maximum="100"
+            		Value="{Binding CurrentSeconds}" Height="Auto" Width="Auto" />
+            </StackPanel>
+            <StackPanel
+        		Orientation="Horizontal"
+        		Margin="234.667,9.5,-46.627,0.5" Width="157.96" Height="30"   >
+                <Label Height="30" HorizontalAlignment="Left" Margin="1.674,0,0,0" x:Name="time_LAB" VerticalAlignment="Top" Width="157.167" RenderTransformOrigin="0.492,1.6" >
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-2.121"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-1.481"/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+
+
+</Controls:MetroWindow>

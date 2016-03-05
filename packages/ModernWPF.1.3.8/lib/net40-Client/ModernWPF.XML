@@ -1,0 +1,2857 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModernWPF</name>
+    </assembly>
+    <members>
+        <member name="T:ModernWPF.Accent">
+            <summary>
+            Specifies an accent color.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Red">
+            <summary>
+            Pre-defined name for the red accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Orange">
+            <summary>
+            Pre-defined name for the orange accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Green">
+            <summary>
+            Pre-defined name for the green accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Teal">
+            <summary>
+            Pre-defined name for the teal accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Olive">
+            <summary>
+            Pre-defined name for the olive accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.Gold">
+            <summary>
+            Pre-defined name for the gold accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.LightBlue">
+            <summary>
+            Pre-defined name for the light blue accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.DarkBlue">
+            <summary>
+            Pre-defined name for the dark blue accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.LightPurple">
+            <summary>
+            Pre-defined name for the light purple accent.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Accent.DarkPurple">
+            <summary>
+            Pre-defined name for the dark purple accent.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Accent.#ctor(System.String,System.Windows.Media.Color)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Accent"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="P:ModernWPF.Accent.Name">
+            <summary>
+            Gets the accent name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.Color">
+            <summary>
+            Gets the base color.
+            </summary>
+            <value>
+            The color.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.MainBrush">
+            <summary>
+            Gets the main accent brush.
+            </summary>
+            <value>
+            The main brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.DarkBrush1">
+            <summary>
+            Gets the brush darker than <see cref="P:ModernWPF.Accent.MainBrush"/>.
+            </summary>
+            <value>
+            The dark brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.DarkBrush2">
+            <summary>
+            Gets the brush darker than <see cref="P:ModernWPF.Accent.DarkBrush1"/>.
+            </summary>
+            <value>
+            The dark brush2.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.DarkBrush3">
+            <summary>
+            Gets the brush darker than <see cref="P:ModernWPF.Accent.DarkBrush2"/>.
+            </summary>
+            <value>
+            The dark brush3.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.DarkBrush4">
+            <summary>
+            Gets the brush darker than <see cref="P:ModernWPF.Accent.DarkBrush3"/>.
+            </summary>
+            <value>
+            The dark brush4.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.LightBrush1">
+            <summary>
+            Gets the brush lighter than <see cref="P:ModernWPF.Accent.MainBrush"/>.
+            </summary>
+            <value>
+            The light brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.LightBrush2">
+            <summary>
+            Gets the brush lighter than <see cref="P:ModernWPF.Accent.LightBrush1"/>.
+            </summary>
+            <value>
+            The light brush2.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.LightBrush3">
+            <summary>
+            Gets the brush lighter than <see cref="P:ModernWPF.Accent.LightBrush2"/>.
+            </summary>
+            <value>
+            The light brush3.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.LightBrush4">
+            <summary>
+            Gets the brush lighter than <see cref="P:ModernWPF.Accent.LightBrush3"/>.
+            </summary>
+            <value>
+            The light brush4.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush1">
+            <summary>
+            Gets the accent brush that's 10% transparent.
+            </summary>
+            <value>
+            The alpha brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush2">
+            <summary>
+            Gets the accent brush that's 20% transparent.
+            </summary>
+            <value>
+            The alpha brush2.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush3">
+            <summary>
+            Gets the accent brush that's 30% transparent.
+            </summary>
+            <value>
+            The alpha brush3.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush4">
+            <summary>
+            Gets the accent brush that's 40% transparent.
+            </summary>
+            <value>
+            The alpha brush4.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush5">
+            <summary>
+            Gets the accent brush that's 50% transparent.
+            </summary>
+            <value>
+            The alpha brush5.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush6">
+            <summary>
+            Gets the accent brush that's 60% transparent.
+            </summary>
+            <value>
+            The alpha brush6.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush7">
+            <summary>
+            Gets the accent brush that's 70% transparent.
+            </summary>
+            <value>
+            The alpha brush7.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush8">
+            <summary>
+            Gets the accent brush that's 80% transparent.
+            </summary>
+            <value>
+            The alpha brush8.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Accent.AlphaBrush9">
+            <summary>
+            Gets the accent brush that's 90% transparent.
+            </summary>
+            <value>
+            The alpha brush9.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Animation">
+            <summary>
+            Quick utility for doing simple ad-hoc animations.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Animation.SlideIn(System.Windows.UIElement,ModernWPF.SlideFromDirection,System.TimeSpan)">
+            <summary>
+            Slides the element in with translate transform.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="direction">The direction.</param>
+            <param name="duration">The duration.</param>
+        </member>
+        <member name="M:ModernWPF.Animation.SlideIn(System.Windows.UIElement,ModernWPF.SlideFromDirection,System.TimeSpan,System.Double)">
+            <summary>
+            Slides the element in with translate transform.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="direction">The direction.</param>
+            <param name="duration">The duration.</param>
+            <param name="startOffset">The start offset.</param>
+        </member>
+        <member name="M:ModernWPF.Animation.SlideIn(System.Windows.UIElement,ModernWPF.SlideFromDirection,System.TimeSpan,System.Double,System.Windows.Media.Animation.IEasingFunction,System.Action)">
+            <summary>
+            Slides the element in with translate transform
+            </summary>
+            <param name="element">The element.</param>
+            <param name="direction">The direction.</param>
+            <param name="duration">The duration.</param>
+            <param name="startOffset">The start offset.</param>
+            <param name="easing">The easing.</param>
+            <param name="completedCallback">The completed callback.</param>
+        </member>
+        <member name="M:ModernWPF.Animation.FadeIn(System.Windows.UIElement,System.TimeSpan,System.Action)">
+            <summary>
+            Animates the element's opacity from 0 to 1.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="duration">The duration.</param>
+            <param name="completedCallback">The completed callback.</param>
+        </member>
+        <member name="M:ModernWPF.Animation.FadeOut(System.Windows.UIElement,System.TimeSpan,System.Action)">
+            <summary>
+            Animates the element's opacity to 1.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="duration">The duration.</param>
+            <param name="completedCallback">The completed callback.</param>
+        </member>
+        <member name="P:ModernWPF.Animation.ShouldAnimate">
+            <summary>
+            Gets a flag indicating whether animation should be used.
+            This does not stop controls from using animations in this class.
+            </summary>
+            <value>
+              <c>true</c> if the app should animate; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Animation.TypicalDuration">
+            <summary>
+            Gets the a typical animation duration.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Animation.TypicalEasing">
+            <summary>
+            Gets the typical easing function.
+            </summary>
+            <value>
+            The typical easing.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Animation.TypicalSlideOffset">
+            <summary>
+            Gets the typical slide offset value. Default is 15.
+            </summary>
+            <value>
+            The typical slide offset.
+            </value>
+        </member>
+        <member name="T:ModernWPF.AnimationSpeed">
+            <summary>
+            Named values for common animation duration in ms.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.AnimationSpeed.None">
+            <summary>
+            No duration, 0.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.AnimationSpeed.Fast">
+            <summary>
+            Short duration, 100ms,
+            </summary>
+        </member>
+        <member name="F:ModernWPF.AnimationSpeed.Normal">
+            <summary>
+            Normal duration, 250ms.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.AnimationSpeed.Slow">
+            <summary>
+            Long duration, 500ms.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.SlideFromDirection">
+            <summary>
+            Indicates the slide direction.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.SlideFromDirection.Left">
+            <summary>
+            Slide from the left.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.SlideFromDirection.Top">
+            <summary>
+            Slide from the top.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.SlideFromDirection.Right">
+            <summary>
+            Slide from the right.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.SlideFromDirection.Bottom">
+            <summary>
+            Slide from the bottom.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Controls.AnimatedScrollViewer">
+            <summary>
+            A scroll viewer that will animate where possible (currently on mouse wheel + click only).
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.AnimatedScrollViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Controls.AnimatedScrollViewer"/> class.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.AnimatedScrollViewer.OnApplyTemplate">
+            <summary>
+            Called when an internal process or application calls <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />, which is used to build the current template's visual tree.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.AnimatedScrollViewer.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>
+            Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.PreviewMouseWheel" /> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:ModernWPF.Controls.AnimatedScrollViewer.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Responds to specific keyboard input and invokes associated scrolling behavior.
+            </summary>
+            <param name="e">Required arguments for this event.</param>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.TargetVerticalOffsetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.TargetVerticalOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.TargetHorizontalOffsetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.TargetHorizontalOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.HorizontalScrollOffsetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.HorizontalScrollOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.VerticalScrollOffsetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.VerticalScrollOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.AnimateScrollProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateScroll"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.AnimateDurationProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateDuration"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.AnimateSplineProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateSpline"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AnimatedScrollViewer.CanKeyboardScrollProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.AnimatedScrollViewer.CanKeyboardScroll"/>.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.TargetVerticalOffset">
+            <summary>
+            This is the VerticalOffset that we'd like to animate to
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.TargetHorizontalOffset">
+            <summary>
+            This is the HorizontalOffset that we'll be animating to
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.HorizontalScrollOffset">
+            <summary>
+            This is the actual horizontal offset property we're going use as an animation helper
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.VerticalScrollOffset">
+            <summary>
+            This is the actual VerticalOffset we're going to use as an animation helper
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateScroll">
+            <summary>
+            Gets or sets a value indicating whether scrolling will be animated (if supported).
+            </summary>
+            <value>
+              <c>true</c> if to animate scrolling; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateDuration">
+            <summary>
+            A property for changing the time it takes to scroll to a new
+            position.
+            </summary>
+            <value>
+            The duration to animate.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.AnimateSpline">
+            <summary>
+            A property to allow users to describe a custom spline for the scrolling animation.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.AnimatedScrollViewer.CanKeyboardScroll">
+            <summary>
+            Gets or sets a value indicating whether common keyboard navigation keys are used to animate the scroll.
+            </summary>
+            <value>
+              <c>true</c> if to detect keyboard keys; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:ModernWPF.Controls.BorderManager.TranslateToWpf(CommonWin32.Rectangles.RECT@)">
+            <summary>
+            translate screen pixels to wpf units for high-dpi scaling.
+            </summary>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ModernWPF.Controls.BorderWindow">
+            <summary>
+            Provides a single side of the resize/glow border window.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.BorderWindow.UpdateBorderBrush">
+            <summary>
+            Updates the border brush based on content window's active state.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Controls.BorderWindow.BorderBrushConverter">
+            <summary>
+            Simple converter to select border color.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Controls.ControlBox">
+            <summary>
+            A UI piece for window control box (min/max/restore buttons).
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.PART_CloseButton">
+            <summary>
+            Name of the close button in template.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.PART_MinButton">
+            <summary>
+            Name of the minimize button in template.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.PART_MaxButton">
+            <summary>
+            Name of the maximize button in template.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.PART_RestoreButton">
+            <summary>
+            Name of the restore button in template.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.ButtonStyleProperty">
+            <summary>
+            The <see cref="P:ModernWPF.Controls.ControlBox.ButtonStyle"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ControlBox.WindowProperty">
+            <summary>
+            The <see cref="P:ModernWPF.Controls.ControlBox.TargetWindow"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.ButtonStyle">
+            <summary>
+            Gets or sets the button style.
+            </summary>
+            <value>
+            The button style.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.TargetWindow">
+            <summary>
+            Gets or sets the associated <see cref="T:System.Windows.Window"/> to be controlled by this control box.
+            </summary>
+            <value>
+            The window.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.CloseCommand">
+            <summary>
+            Gets the command that closes the window.
+            </summary>
+            <value>
+            The close command.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.MaximizeCommand">
+            <summary>
+            Gets the command that maximizes the window.
+            </summary>
+            <value>
+            The maximize command.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.RestoreCommand">
+            <summary>
+            Gets the command that restores the window.
+            </summary>
+            <value>
+            The restore command.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.ControlBox.MinimizeCommand">
+            <summary>
+            Gets the command that minimizes the window.
+            </summary>
+            <value>
+            The minimize command.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.AppButton">
+            <summary>
+            A button with circle around the content and optional text.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButton.OrientationProperty">
+            <summary>
+            Dependency property for <see cref="P:ModernWPF.Controls.AppButton.Orientation"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButton.ButtonSizeProperty">
+            <summary>
+            Dependency property for <see cref="P:ModernWPF.Controls.AppButton.ButtonSize"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButton.TextSizeProperty">
+            <summary>
+            Dependency property for <see cref="P:ModernWPF.Controls.AppButton.TextSize"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButton.TextProperty">
+            <summary>
+            Dependency property for <see cref="P:ModernWPF.Controls.AppButton.Text"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButton.CollapseOnDisableProperty">
+            <summary>
+            Dependency property for <see cref="P:ModernWPF.Controls.AppButton.CollapseOnDisable"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.AppButton.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>
+            Invoked whenever an unhandled <see cref="E:System.Windows.FrameworkElement.ContextMenuOpening" /> routed event reaches this class in its route. Implement this method to add class handling for this event.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="P:ModernWPF.Controls.AppButton.Orientation">
+            <summary>
+            Gets or sets the orientation for the icon and text.
+            </summary>
+            <value>
+            The orientation.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AppButton.ButtonSize">
+            <summary>
+            Gets or sets the button size.
+            </summary>
+            <value>
+            The size.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AppButton.TextSize">
+            <summary>
+            Gets or sets the size of the text.
+            </summary>
+            <value>
+            The size of the text.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AppButton.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+            <value>
+            The text.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.AppButton.CollapseOnDisable">
+            <summary>
+            Gets or sets a value indicating whether the button will collapse if not enabled.
+            Default is true.
+            </summary>
+            <value>
+              <c>true</c> to collapse on disable; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.AppButtonSize">
+            <summary>
+            Indicates the text or icon size for <see cref="T:ModernWPF.Controls.AppButton"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButtonSize.Large">
+            <summary>
+            Use the large size.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.AppButtonSize.Small">
+            <summary>
+            Use the small size.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Controls.LegacyBorderManager">
+            <summary>
+            Used for actual processing since Chrome is freezable and don't want to keep states there.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.LegacyBorderManager.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)">
+            <summary>
+            Handles Win32 window messages for this window.
+            </summary>
+            <param name="hwnd">The window handle.</param>
+            <param name="msg">The message ID.</param>
+            <param name="wParam">The message's wParam value.</param>
+            <param name="lParam">The message's lParam value.</param>
+            <param name="handled">A value that indicates whether the message was handled. Set the value to
+            true if the message was handled; otherwise, false.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ModernWPF.Controls.LegacyBorderWindow">
+            <summary>
+            Old method of providing sizing glow border using a single window.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.LegacyBorderWindow.ToggleVisible(System.Boolean)">
+            <summary>
+            Toggles the visibility of the border window while taking account into
+            Windows animation settings.
+            </summary>
+            <param name="visible">if set to <c>true</c> the border will become visible.</param>
+        </member>
+        <member name="M:ModernWPF.Controls.LegacyBorderWindow.TranslateToWpf(CommonWin32.Rectangles.RECT)">
+            <summary>
+            translate screen pixels to wpf units for high-dpi scaling.
+            </summary>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Controls.LegacyBorderWindow.TranslateToPixels(System.Windows.Thickness)">
+            <summary>
+            Translate wpf units to actual pixels for high-dpi scaling.
+            </summary>
+            <param name="wpfThickness"></param>
+            <returns></returns>
+        </member>
+        <member name="F:ModernWPF.Controls.LegacyBorderWindow.NC_BORDER_MATRIX">
+            <summary>
+            Matrix of the HT values to return for sizing border.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Controls.DialogControl">
+            <summary>
+            A user control that can be hosted in a <see cref="T:ModernWPF.Controls.DialogControlContainer"/> like a dialog.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.DialogControl.CloseOnEscapeKeyProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.DialogControl.CloseOnEscapeKey"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.DialogControl.CloseOnContainerClickProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.DialogControl.CloseOnContainerClick"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.DialogControl.DisableTargetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.DialogControl.CloseOnEscapeKey"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Invoked when an unhandled <see cref="E:System.Windows.Input.Keyboard.KeyDown" /> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.OnFocus">
+            <summary>
+            Called when dialog has been shown and focus needs to happen.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.OnClosed">
+            <summary>
+            Called when dialog has been closed.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.ShowDialog(System.Windows.Window)">
+            <summary>
+            Shows the dialog on a window. The window must have a <see cref="T:ModernWPF.Controls.DialogControlContainer"/>
+            in its visual tree.
+            </summary>
+            <param name="window">The window.</param>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.ShowDialog(ModernWPF.Controls.DialogControlContainer)">
+            <summary>
+            Shows the dialog on a <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="container">The container.</param>
+            <exception cref="T:System.ArgumentNullException">container</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.ShowDialogModal(System.Windows.Window)">
+            <summary>
+            Shows the dialog on a window. The window must have a <see cref="T:ModernWPF.Controls.DialogControlContainer"/>
+            in its visual tree.
+            </summary>
+            <param name="window">The window.</param>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControl.ShowDialogModal(ModernWPF.Controls.DialogControlContainer)">
+            <summary>
+            Shows the dialog on a <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="container">The container.</param>
+            <exception cref="T:System.ArgumentNullException">container</exception>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControl.Container">
+            <summary>
+            Gets or sets the current container reference. This should only be set by <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <value>
+            The container.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControl.DialogResult">
+            <summary>
+            Gets or sets the dialog result.
+            </summary>
+            <value>
+            The dialog result.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControl.CloseOnEscapeKey">
+            <summary>
+            Gets or sets a value indicating whether the dialog closes on escape key.
+            </summary>
+            <value>
+            <c>true</c> to close on escape key; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControl.CloseOnContainerClick">
+            <summary>
+            Gets or sets a value indicating whether dialog closes when mouse clicks on the container.
+            </summary>
+            <value>
+            <c>true</c> to close when mouse clicks on container; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControl.DisableTarget">
+            <summary>
+            Gets or sets a value indicating whether the disable target specified in the <see cref="T:ModernWPF.Controls.DialogControlContainer"/> is disabled when this is shown.
+            </summary>
+            <value>
+              <c>true</c> to disable target; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.DialogControlContainer">
+            <summary>
+            A container element for hosting <see cref="T:ModernWPF.Controls.DialogControl"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.DialogControlContainer.HasDialogOpenProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.DialogControlContainer.HasDialogOpen"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.DialogControlContainer.DisableTargetProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.DialogControlContainer.DisableTarget"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.DialogControlContainer.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControlContainer.HasDialogOpen">
+            <summary>
+            Gets a value indicating whether this container has any dialog open.
+            </summary>
+            <value>
+              <c>true</c> if it has dialog open; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.DialogControlContainer.DisableTarget">
+            <summary>
+            Gets or sets the target to disable when dialogs are visible.
+            </summary>
+            <value>
+            The disable target.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.MessageBoxControl">
+            <summary>
+            A base message box type <see cref="T:ModernWPF.Controls.DialogControl"/> with custom content.
+            A message box has built-in messagebox icon/caption/buttons.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.MessageBoxControl.ContentMinWidthProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.MessageBoxControl.ContentMinWidth"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.MessageBoxControl.ContentMaxWidthProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Controls.MessageBoxControl.ContentMaxWidth"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.MessageBoxControl.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.MessageBoxControl.OnClosing(System.Windows.MessageBoxResult)">
+            <summary>
+            Called when a non-cancel button is pressed and the control needs to verify if the result is allowed.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>true to allow closing the dialog with the result.</returns>
+        </member>
+        <member name="M:ModernWPF.Controls.MessageBoxControl.OnFocus">
+            <summary>
+            Called when dialog has been shown and focus needs to happen.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.MessageBoxControl.ShowDialogModal(System.Windows.Window,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows the dialog modal.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <param name="defaultResult">The default result.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Controls.MessageBoxControl.ShowDialogModal(ModernWPF.Controls.DialogControlContainer,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows the dialog with icon/caption/buttons.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <param name="defaultResult">The default result.</param>
+        </member>
+        <member name="P:ModernWPF.Controls.MessageBoxControl.ContentMinWidth">
+            <summary>
+            Gets or sets the minimum width of the content.
+            </summary>
+            <value>
+            The minimum width of the content.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Controls.MessageBoxControl.ContentMaxWidth">
+            <summary>
+            Gets or sets the maximum width of the content.
+            </summary>
+            <value>
+            The maximum width of the content.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.ModernContentControl">
+            <summary>
+            A <see cref="T:System.Windows.Controls.ContentControl"/> that animates content in.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernContentControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Controls.ModernContentControl"/> class.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernContentControl.AnimateIn">
+            <summary>
+            Animates the content in.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Controls.ModernContentControl.SlideFromDirectionProperty">
+            <summary>
+            The DP for <see cref="P:ModernWPF.Controls.ModernContentControl.SlideFromDirection"/>.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Controls.ModernContentControl.SlideFromDirection">
+            <summary>
+            Gets or sets the slide from animation direction.
+            </summary>
+            <value>
+            The slide from direction.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Controls.ModernMessageBox">
+            <summary>
+            An in-window <see cref="T:System.Windows.MessageBox"/> replacment when using ModernWPF.
+            </summary>
+            <summary>
+            ModernMessageBox
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(System.Windows.Window,System.String)">
+            <summary>
+            Displays a message box in front of the specified window.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(System.Windows.Window,System.String,System.String)">
+            <summary>
+            Displays a message box in front of the specified window.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton)">
+            <summary>
+            Displays a message box in front of the specified window.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            Displays a message box in front of the specified window.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <summary>
+            Displays a message box in front of the specified window.
+            </summary>
+            <param name="owner">A <see cref="T:System.Windows.Window"/> that contains <see cref="T:ModernWPF.Controls.DialogControlContainer"/> in its visual tree.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <param name="defaultResult">The default result.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(ModernWPF.Controls.DialogControlContainer,System.String)">
+            <summary>
+            Displays a message box in front of the specified <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(ModernWPF.Controls.DialogControlContainer,System.String,System.String)">
+            <summary>
+            Displays a message box in front of the specified <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(ModernWPF.Controls.DialogControlContainer,System.String,System.String,System.Windows.MessageBoxButton)">
+            <summary>
+            Displays a message box in front of the specified <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(ModernWPF.Controls.DialogControlContainer,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            Displays a message box in front of the specified <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.Show(ModernWPF.Controls.DialogControlContainer,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <summary>
+            Displays a message box in front of the specified <see cref="T:ModernWPF.Controls.DialogControlContainer"/>.
+            </summary>
+            <param name="owner">A <see cref="T:ModernWPF.Controls.DialogControlContainer"/> to host this message box.</param>
+            <param name="messageBoxText">The message box text.</param>
+            <param name="caption">The caption.</param>
+            <param name="button">The button to display.</param>
+            <param name="icon">The icon to display.</param>
+            <param name="defaultResult">The default result.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">owner</exception>
+        </member>
+        <member name="M:ModernWPF.Controls.ModernMessageBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Converters.AppIconImageConverter">
+            <summary>
+            A converter for the <see cref="P:System.Windows.Window.Icon"/> property that if not set, will return the application's icon (i.e. from the exe file).
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.AppIconImageConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.AppIconImageConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.AppIconImageConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Converters.AppIconImageConverter.AppIcon">
+            <summary>
+            Gets the extracted large application icon image.
+            </summary>
+            <value>
+            The application icon.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.BoolNotConverter">
+            <summary>
+            Inverts a boolean value.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.BoolNotConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.BoolNotConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.BoolNotConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.EnumValueConverter">
+            <summary>
+            Converts an enum to its underlying integer value.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.EnumValueConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the enum to integer value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="targetType">Type of the target.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="culture">The culture.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Converters.EnumValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value back to enum.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="targetType">Type of the target.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="culture">The culture.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ModernWPF.Converters.EnumValueConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.FileIconConverter">
+            <summary>
+            Parse databound value as file path and converts to file icon image.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.FileIconConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.FileIconConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.FileIconConverter.GetFileIconCore(System.Object,System.Boolean)">
+            <summary>
+            Real method to get the file icon after parsing the parameter.
+            </summary>
+            <param name="value">The databound value.</param>
+            <param name="large">if set to <c>true</c> return large icon.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ModernWPF.Converters.FileIconConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.IsSmallFontConverter">
+            <summary>
+            A converter that tests if a double value considered a small font size to allow changing TextOptions.
+            This can be removed from the fonts style if using high dpi displays.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.IsSmallFontConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a double value to boolean true if too small.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.IsSmallFontConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.IsSmallFontConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Converters.IsSmallFontConverter.Threshold">
+            <summary>
+            Gets or sets the threshold size for small.
+            </summary>
+            <value>
+            The threshold.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.BoolVisibleConverter">
+            <summary>
+            Provides conversion of bool values to visibility.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.BoolVisibleConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value to the string representation.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.BoolVisibleConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.BoolVisibleConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.MultiBoolVisibleConverter">
+            <summary>
+            Converts multiple <see cref="T:System.Boolean"/> or <see cref="T:System.Windows.Visibility"/> values into a single <see cref="T:System.Windows.Visibility"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.MultiBoolVisibleConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts source values to a value for the binding target. The data binding engine calls this method when it propagates the values from source bindings to the binding target.
+            </summary>
+            <param name="values">The array of values that the source bindings in the <see cref="T:System.Windows.Data.MultiBinding" /> produces. The value <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> indicates that the source binding has no value to provide for conversion.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value.If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty" />.<see cref="F:System.Windows.DependencyProperty.UnsetValue" /> indicates that the converter did not produce a value, and that the binding will use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> if it is available, or else will use the default value.A return value of <see cref="T:System.Windows.Data.Binding" />.<see cref="F:System.Windows.Data.Binding.DoNothing" /> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> or the default value.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.MultiBoolVisibleConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that the binding target produces.</param>
+            <param name="targetTypes">The array of types to convert to. The array length indicates the number and types of values that are suggested for the method to return.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            An array of values that have been converted from the target value back to the source values.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.MultiBoolVisibleConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.NullEmptyCollapsedConverter">
+            <summary>
+            Converts to <see cref="F:System.Windows.Visibility.Visible"/> if the value is null or empty string.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.NullEmptyCollapsedConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.NullEmptyCollapsedConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.NullEmptyCollapsedConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.SingleToEnumerableConverter">
+            <summary>
+            Converts a single object to an <see cref="T:System.Collections.IEnumerable"/> for list binding purposes when you only have one.
+            Useful for <see cref="!:TreeView"/>'s ItemsSources binding.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.SingleToEnumerableConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.SingleToEnumerableConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.SingleToEnumerableConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.TextCaseConverter">
+            <summary>
+            Provides conversion of text to upper (default), lower, or title cases.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.TextCaseConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value to the string representation.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.TextCaseConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.TextCaseConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.ThicknessToDoubleConverter">
+            <summary>
+            Convert <see cref="T:System.Windows.Thickness"/> in a property to single double value for those pesky shape bindings.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.ThicknessToDoubleConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.ThicknessToDoubleConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="P:ModernWPF.Converters.ThicknessToDoubleConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.ThicknessZeroSideConverter">
+            <summary>
+            Converts a <see cref="T:System.Windows.Thickness"/> or number to another <see cref="T:System.Windows.Thickness"/> with the specified sides to 0. 
+            Side parameters can be top, left, right, or bottom.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.ThicknessZeroSideConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.ThicknessZeroSideConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Converters.ThicknessZeroSideConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.TreeDepthLeftMarginConverter">
+            <summary>
+            Used to calculate left margin of a tree node to achieve full row select.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.TreeDepthLeftMarginConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.TreeDepthLeftMarginConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="P:ModernWPF.Converters.TreeDepthLeftMarginConverter.Length">
+            <summary>
+            Gets or sets the length to indent for each level.
+            </summary>
+            <value>
+            The length.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Converters.WindowCaptionHeightConverter">
+            <summary>
+            Converts invalid caption height to system caption height for modern windows.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Converters.WindowCaptionHeightConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:ModernWPF.Converters.WindowCaptionHeightConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="P:ModernWPF.Converters.WindowCaptionHeightConverter.Instance">
+            <summary>
+            Gets the singleton instance for this converter.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="T:ModernWPF.GridViewSortParameter">
+            <summary>
+            The parameter passed to <see cref="!:ListViewUI.SortCommand"/>.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.GridViewSortParameter.Header">
+            <summary>
+            Gets the header that was clicked.
+            </summary>
+            <value>
+            The header.
+            </value>
+        </member>
+        <member name="P:ModernWPF.GridViewSortParameter.NewSortDirection">
+            <summary>
+            Gets the new sort direction. If this is null then no sort should happen.
+            </summary>
+            <value>
+            The new sort direction.
+            </value>
+        </member>
+        <member name="T:ModernWPF.ListViewUI">
+            <summary>
+            Contains attached properties for a <see cref="T:System.Windows.Controls.ListView"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.ListViewUI.SortCommandProperty">
+            <summary>
+            The sort command property on a <see cref="T:System.Windows.Controls.ListView"/> when clicking on the <see cref="T:System.Windows.Controls.GridView"/> view columns.
+            The command parameter will be <see cref="T:ModernWPF.GridViewSortParameter"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ListViewUI.GetSortCommand(System.Windows.DependencyObject)">
+            <summary>
+            Gets the sort command.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">obj</exception>
+        </member>
+        <member name="M:ModernWPF.ListViewUI.SetSortCommand(System.Windows.DependencyObject,System.Windows.Input.ICommand)">
+            <summary>
+            Sets the sort command.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+            <exception cref="T:System.ArgumentNullException">obj</exception>
+        </member>
+        <member name="F:ModernWPF.ListViewUI.SortDirectionProperty">
+            <summary>
+            The sort direction property on a <see cref="T:System.Windows.Controls.GridViewColumnHeader"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ListViewUI.GetSortDirection(System.Windows.DependencyObject)">
+            <summary>
+            Gets the sort direction.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">obj</exception>
+        </member>
+        <member name="M:ModernWPF.ListViewUI.SetSortDirection(System.Windows.DependencyObject,System.Nullable{System.ComponentModel.ListSortDirection})">
+            <summary>
+            Sets the sort direction.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+            <exception cref="T:System.ArgumentNullException">obj</exception>
+        </member>
+        <member name="M:ModernWPF.ListViewUI.ClearSorts(System.Windows.Controls.ListView)">
+            <summary>
+            Used to manually clears any sort indicators in the <see cref="T:System.Windows.Controls.GridView"/> columns 
+            if it is set by this class.
+            </summary>
+            <param name="listView">The list view.</param>
+        </member>
+        <member name="T:ModernWPF.MenuItemUI">
+            <summary>
+            Contains various attached properties for <see cref="T:System.Windows.Controls.MenuItem"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.MenuItemUI.GroupNameProperty">
+            <summary>
+            Attached propert for grouped check behavior.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.MenuItemUI.SetGroupName(System.Windows.Controls.MenuItem,System.String)">
+            <summary>
+            Sets the GroupName property for this object.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:ModernWPF.MenuItemUI.GetGroupName(System.Windows.Controls.MenuItem)">
+            <summary>
+            Gets the GroupName property for this object.
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ModernWPF.Messages.AppCloseMessage">
+            <summary>
+            Message for notifying the app is about to be closed.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Messages.MessageBase">
+            <summary>
+            Base class for messages.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBase"/> class.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBase.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBase"/> class.
+            </summary>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBase.#ctor(System.Object,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBase"/> class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="target">The target.</param>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBase.Sender">
+            <summary>
+            Gets or sets the sender.
+            </summary>
+            <value>
+            The sender.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBase.Target">
+            <summary>
+            Gets or sets the target.
+            </summary>
+            <value>
+            The target.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Messages.AppClosingMessage">
+            <summary>
+            Message for notifying the app is closing.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Messages.AppClosingMessage.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the closing should be canceled.
+            </summary>
+            <value>
+              <c>true</c> to cancel; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Messages.MessageBoxMessage">
+            <summary>
+            Message for showing typical modal dialog.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBoxMessage.#ctor(System.String,System.Action{System.Windows.MessageBoxResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBoxMessage"/> class.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBoxMessage.#ctor(System.Object,System.String,System.Action{System.Windows.MessageBoxResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBoxMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBoxMessage.#ctor(System.Object,System.Object,System.String,System.Action{System.Windows.MessageBoxResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.MessageBoxMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="target">The message's intended target.</param>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBoxMessage.HandleWithModern(System.Windows.Window)">
+            <summary>
+            Handles a basic <see cref="T:ModernWPF.Messages.MessageBoxMessage"/> on a window by showing a <see cref="T:ModernWPF.Controls.ModernMessageBox"/>.
+            </summary>
+            <param name="owner">The owner.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Messages.MessageBoxMessage.HandleWithPlatform(System.Windows.Window)">
+            <summary>
+            Handles a basic <see cref="T:ModernWPF.Messages.MessageBoxMessage"/> on a window by showing built-in <see cref="T:System.Windows.MessageBox"/>.
+            </summary>
+            <param name="owner">The owner.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Button">
+            <summary>
+            Gets or sets the available buttons.
+            </summary>
+            <value>
+            The button.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Caption">
+            <summary>
+            Gets or sets the caption.
+            </summary>
+            <value>
+            The caption.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Content">
+            <summary>
+            Gets the content.
+            </summary>
+            <value>
+            The content.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.DefaultResult">
+            <summary>
+            Gets or sets the default result.
+            </summary>
+            <value>
+            The default result.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Icon">
+            <summary>
+            Gets or sets the icon.
+            </summary>
+            <value>
+            The icon.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Options">
+            <summary>
+            Gets or sets the options.
+            </summary>
+            <value>
+            The options.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.MessageBoxMessage.Callback">
+            <summary>
+            Gets the callback.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Messages.ChooseFileMessage">
+            <summary>
+            Message for choosing file(s) for opening/saving.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFileMessage.#ctor(ModernWPF.Messages.FileSelected)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFileMessage"/> class.
+            </summary>
+            <param name="callback">The callback when files are selected.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFileMessage.#ctor(System.Object,ModernWPF.Messages.FileSelected)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFileMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="callback">The callback when files are selected.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFileMessage.#ctor(System.Object,System.Object,ModernWPF.Messages.FileSelected)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFileMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="target">The message's intended target.</param>
+            <param name="callback">The callback when files are selected.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFileMessage.DoCallback(System.String[])">
+            <summary>
+            Does the callback to notify sender of selected files.
+            </summary>
+            <param name="files">The files.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFileMessage.HandleWithPlatform(System.Windows.Window)">
+            <summary>
+            Handles the <see cref="T:ModernWPF.Messages.ChooseFileMessage"/> on a window by showing a <see cref="T:Microsoft.Win32.FileDialog"/> based on the message options.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFileMessage.Caption">
+            <summary>
+            Gets or sets the UI caption.
+            </summary>
+            <value>
+            The caption.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFileMessage.InitialFileName">
+            <summary>
+            Gets or sets the initial name of the file.
+            </summary>
+            <value>
+            The initial name of the file.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFileMessage.InitialFolder">
+            <summary>
+            Gets or sets the initial folder.
+            </summary>
+            <value>
+            The initial folder.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFileMessage.Filters">
+            <summary>
+            Gets or sets the file type filters.
+            </summary>
+            <value>
+            The filters.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFileMessage.Purpose">
+            <summary>
+            Gets or sets the file selection purpose.
+            </summary>
+            <value>
+            The purpose.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Messages.ChooseFileMessage.FilePurpose">
+            <summary>
+            Indicates the purpose for a <see cref="T:ModernWPF.Messages.ChooseFileMessage"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Messages.ChooseFileMessage.FilePurpose.OpenSingle">
+            <summary>
+            Choose a single file to open.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Messages.ChooseFileMessage.FilePurpose.OpenMultiple">
+            <summary>
+            Choose multiple files to open.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Messages.ChooseFileMessage.FilePurpose.Save">
+            <summary>
+            Choose a single file to save.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Messages.FileSelected">
+            <summary>
+            Delegate for file selected callback.
+            </summary>
+            <param name="filePaths">The file paths.</param>
+        </member>
+        <member name="T:ModernWPF.Messages.ChooseFolderMessage">
+            <summary>
+            Message for choosing a folder.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFolderMessage.#ctor(System.Action{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFolderMessage"/> class.
+            </summary>
+            <param name="callback">The callback when a folder is chosen.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFolderMessage.#ctor(System.Object,System.Action{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFolderMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="callback">The callback when a folder is chosen.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFolderMessage.#ctor(System.Object,System.Object,System.Action{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.ChooseFolderMessage"/> class.
+            </summary>
+            <param name="sender">The message's original sender.</param>
+            <param name="target">The message's intended target.</param>
+            <param name="callback">The callback when a folder is chosen.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.ChooseFolderMessage.DoCallback(System.String)">
+            <summary>
+            Does the callback to notify sender of selected folder.
+            </summary>
+            <param name="folder">The folder.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ModernWPF.Messages.ChooseFolderMessage.HandleWithPlatform(System.Windows.Window)" -->
+        <member name="P:ModernWPF.Messages.ChooseFolderMessage.Caption">
+            <summary>
+            Gets or sets the UI caption.
+            </summary>
+            <value>
+            The caption.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.ChooseFolderMessage.InitialFolder">
+            <summary>
+            Gets or sets the initial folder.
+            </summary>
+            <value>
+            The initial folder.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Messages.OpenExplorerMessage">
+            <summary>
+            Message to open Windows Explorer with optional folder to open OR item to select.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.OpenExplorerMessage.HandleWithPlatform">
+            <summary>
+            Handles the <see cref="T:ModernWPF.Messages.ChooseFileMessage"/>.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Messages.OpenExplorerMessage.FolderPath">
+            <summary>
+            Gets or sets the folder path to open initially.
+            This is exclusive with <see cref="P:ModernWPF.Messages.OpenExplorerMessage.SelectedPath"/>.
+            </summary>
+            <value>
+            The folder path.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Messages.OpenExplorerMessage.SelectedPath">
+            <summary>
+            Gets or sets the path to show as selected initially.
+            This is exclusive with <see cref="P:ModernWPF.Messages.OpenExplorerMessage.FolderPath"/>.
+            </summary>
+            <value>
+            The selected path.
+            </value>
+        </member>
+        <member name="T:ModernWPF.Messages.RefreshCommandsMessage">
+            <summary>
+            Message to update UI elements bound to <see cref="T:System.Windows.Input.ICommand"/>s.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.RefreshCommandsMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.RefreshCommandsMessage"/> class
+            with the current app's dispatcher.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Messages.RefreshCommandsMessage.#ctor(System.Windows.Threading.Dispatcher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ModernWPF.Messages.RefreshCommandsMessage"/> class.
+            </summary>
+            <param name="dispatcher">The dispatcher.</param>
+        </member>
+        <member name="M:ModernWPF.Messages.RefreshCommandsMessage.HandleIt">
+            <summary>
+            Handles the <see cref="T:ModernWPF.Messages.RefreshCommandsMessage"/>.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Messages.RefreshCommandsMessage.Dispatcher">
+            <summary>
+            Gets or sets the UI thread dispatcher.
+            </summary>
+            <value>
+            The dispatcher.
+            </value>
+        </member>
+        <member name="T:ModernWPF.ModernExtensions">
+            <summary>
+            Extension methods for using this lib.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.IsFullyInsideScrollViewer(System.Windows.UIElement)">
+            <summary>
+            Determines whether the specified element is fully in the viewport of the first scrollviewr parent
+            (i.e. not clipped).
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.FindParentInVisualTree``1(System.Windows.DependencyObject)">
+            <summary>
+            Finds the first parent of the specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="control">The control.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.FindChildInVisualTree``1(System.Windows.DependencyObject)">
+            <summary>
+            Finds the first specified object type in visual tree.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="control">The control.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.FindChildInVisualTree``1(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Finds the first specified object type in visual tree.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="control">The control.</param>
+            <param name="reverse">if set to <c>true</c> then find in reverse order (last child first).</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.DoEvents(System.Windows.Application)">
+            <summary>
+            Simulate the famous DoEvents() method from winform days.
+            </summary>
+            <param name="application">The application.</param>
+        </member>
+        <member name="M:ModernWPF.ModernExtensions.DoEvents(System.Windows.Threading.Dispatcher)">
+            <summary>
+            Simulate the famous DoEvents() method from winform days.
+            </summary>
+            <param name="dispatcher">The dispatcher.</param>
+        </member>
+        <member name="T:ModernWPF.Chrome">
+            <summary>
+            Attached property class for making a <see cref="T:System.Windows.Window"/> modern.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.IsHitTestVisibleProperty">
+            <summary>
+            Attached property to mark a UI element as hit-testable when in the window caption area.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetIsHitTestVisible(System.Windows.IInputElement)">
+            <summary>
+            Gets the IsHitTestVisible property for the element.
+            </summary>
+            <param name="inputElement">The input element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetIsHitTestVisible(System.Windows.IInputElement,System.Boolean)">
+            <summary>
+            Sets the IsHitTestVisible property for the element.
+            </summary>
+            <param name="inputElement">The input element.</param>
+            <param name="hitTestVisible">if set to <c>true</c> then the element is hit test visible in chrome.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetIsCaption(System.Windows.IInputElement)">
+            <summary>
+            Gets the IsCaption value.
+            </summary>
+            <param name="inputElement">The input element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetIsCaption(System.Windows.IInputElement,System.Boolean)">
+            <summary>
+            Sets the IsCaption value.
+            </summary>
+            <param name="inputElement">The input element.</param>
+            <param name="isCaption">if set to <c>true</c> then the element is hit test visible as caption.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="F:ModernWPF.Chrome.IsCaptionProperty">
+            <summary>
+            Attached property to mark a UI element as caption during hit-tests.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetChrome(System.Windows.Window)">
+            <summary>
+            Gets the chrome.
+            </summary>
+            <param name="window">The window.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">window</exception>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetChrome(System.Windows.Window,ModernWPF.Chrome)">
+            <summary>
+            Sets the chrome.
+            </summary>
+            <param name="window">The window.</param>
+            <param name="chrome">The chrome.</param>
+            <exception cref="T:System.ArgumentNullException">window</exception>
+        </member>
+        <member name="F:ModernWPF.Chrome.ChromeProperty">
+            <summary>
+            The modern chrome attached property.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetCaptionHeight(System.Windows.DependencyObject)">
+            <summary>
+            Gets the height of the window caption area.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetCaptionHeight(System.Windows.DependencyObject,System.Double)">
+            <summary>
+            Sets the height of the window caption area.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:ModernWPF.Chrome.CaptionHeightProperty">
+            <summary>
+            The dependency property for CaptionHeight.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetShowCaptionText(System.Windows.DependencyObject)">
+            <summary>
+            Gets the value indicating whether to show caption text on the window.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetShowCaptionText(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Gets the value indicating whether to show caption text on the window.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">if set to <c>true</c> then show window title.</param>
+        </member>
+        <member name="F:ModernWPF.Chrome.ShowCaptionTextProperty">
+            <summary>
+            The dependency property for ShowCaptionText.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetShowCaptionIcon(System.Windows.DependencyObject)">
+            <summary>
+            Gets the value indicating whether to show caption icon on the window.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetShowCaptionIcon(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the value indicating whether to show caption text on the window.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">if set to <c>true</c> [value].</param>
+        </member>
+        <member name="F:ModernWPF.Chrome.ShowCaptionIconProperty">
+            <summary>
+            The dependency property for ShowCaptionIcon.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetShowControlBoxes(System.Windows.DependencyObject)">
+            <summary>
+            Gets whether to show control boxes in ModernWindow style.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetShowControlBoxes(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets whether to show control boxes.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">if set to <c>true</c> then show the control boxes.</param>
+        </member>
+        <member name="F:ModernWPF.Chrome.ShowControlBoxesProperty">
+            <summary>
+            The dependency property for ShowControlBoxes.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.ResizeBorderThicknessProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.ResizeBorderThickness"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.ActiveBorderBrushProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.ActiveBorderBrush"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.InactiveBorderBrushProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.InactiveBorderBrush"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.ActiveCaptionBrushProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.ActiveCaptionBrush"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.InactiveCaptionBrushProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.InactiveCaptionBrush"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.ActiveCaptionForegroundProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.ActiveCaptionForeground"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.Chrome.InactiveCaptionForegroundProperty">
+            <summary>
+            The dependency property for <see cref="P:ModernWPF.Chrome.InactiveCaptionForeground"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.GetCaptionExtraContent(System.Windows.Window)">
+            <summary>
+            Gets the extra content on the caption area.
+            </summary>
+            <param name="window">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.Chrome.SetCaptionExtraContent(System.Windows.Window,System.Object)">
+            <summary>
+            Sets the extra content on the caption area.
+            </summary>
+            <param name="window">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:ModernWPF.Chrome.CaptionExtraContentProperty">
+            <summary>
+            The dependency property for <see cref="!:CaptionExtraContent"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Chrome.CreateInstanceCore">
+            <summary>
+            When implemented in a derived class, creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class.
+            </summary>
+            <returns>
+            The new instance.
+            </returns>
+        </member>
+        <member name="P:ModernWPF.Chrome.ResizeBorderThickness">
+            <summary>
+            Gets the resize border thickness.
+            </summary>
+            <value>
+            The resize border thickness.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.ActiveBorderBrush">
+            <summary>
+            Gets or sets the active border brush.
+            </summary>
+            <value>
+            The active border brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.InactiveBorderBrush">
+            <summary>
+            Gets or sets the inactive border brush.
+            </summary>
+            <value>
+            The inactive border brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.ActiveCaptionBrush">
+            <summary>
+            Gets or sets the active caption brush.
+            </summary>
+            <value>
+            The active caption brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.InactiveCaptionBrush">
+            <summary>
+            Gets or sets the inactive caption brush.
+            </summary>
+            <value>
+            The inactive caption brush.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.ActiveCaptionForeground">
+            <summary>
+            Gets or sets the active caption foreground.
+            </summary>
+            <value>
+            The active caption foreground.
+            </value>
+        </member>
+        <member name="P:ModernWPF.Chrome.InactiveCaptionForeground">
+            <summary>
+            Gets or sets the inactive caption foreground.
+            </summary>
+            <value>
+            The inactive caption foreground.
+            </value>
+        </member>
+        <member name="T:ModernWPF.ModernTheme">
+            <summary>
+            Allows retrieval of theme resources based on an accent color.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ModernTheme.GetPredefinedAccent(System.String)">
+            <summary>
+            Gets the predefined accent with the specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ModernTheme.ApplyTheme(ModernWPF.ModernTheme.Theme,System.String)">
+            <summary>
+            Applies the theme with the name of the accent color theme.
+            </summary>
+            <param name="theme">The theme.</param>
+            <param name="predefinedAccentName">Name of the predefined accent. These can be found in the <see cref="T:ModernWPF.Accent"/> class.</param>
+        </member>
+        <member name="M:ModernWPF.ModernTheme.ApplyTheme(ModernWPF.ModernTheme.Theme,ModernWPF.Accent)">
+            <summary>
+            Applies the theme with the accent color theme.
+            </summary>
+            <param name="theme">The theme.</param>
+            <param name="accent">The accent.</param>
+        </member>
+        <member name="P:ModernWPF.ModernTheme.PredefinedAccents">
+            <summary>
+            Gets the predefined accents colors.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.ModernTheme.CurrentAccent">
+            <summary>
+            Gets the current accent.
+            </summary>
+            <value>
+            The current accent.
+            </value>
+        </member>
+        <member name="P:ModernWPF.ModernTheme.CurrentTheme">
+            <summary>
+            Gets the current theme.
+            </summary>
+            <value>
+            The current theme.
+            </value>
+        </member>
+        <member name="T:ModernWPF.ModernTheme.Theme">
+            <summary>
+            Indicates the main theme style.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.ModernTheme.Theme.Light">
+            <summary>
+            Theme has light background.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.ModernTheme.Theme.Dark">
+            <summary>
+            Theme has dark background.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.MouseEvents">
+            <summary>
+            Contains extra mouse events when using the modern <see cref="T:ModernWPF.Chrome"/> on a <see cref="T:System.Windows.Window"/>.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.MouseEvents.PreviewMouseHWheelEvent">
+            <summary>
+            Identifies the PreviewMouseHWheel event.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.MouseEvents.AddPreviewMouseHWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)">
+            <summary>
+            Adds a handler to the PreviewMouseHWheel event.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:ModernWPF.MouseEvents.RemovePreviewMouseHWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)">
+            <summary>
+            Removes a handler to the PreviewMouseHWheel event.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="F:ModernWPF.MouseEvents.MouseHWheelEvent">
+            <summary>
+            Identifies the MouseHWheel event.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.MouseEvents.AddMouseHWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)">
+            <summary>
+            Adds a handler to the MouseHWheel event.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="M:ModernWPF.MouseEvents.RemoveMouseHWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)">
+            <summary>
+            Removes a handler to the MouseHWheel event.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="handler">The handler.</param>
+        </member>
+        <member name="T:ModernWPF.PlatformInfo">
+            <summary>
+            Some lame properties for workarounds.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.PlatformInfo.IsLegacyOS">
+            <summary>
+            Flag for legacy OS that don't display things correctly.
+            Mostly for XP and like.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.RelayCommand">
+            <summary>
+            Simple relay command for internal use only.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.RelayCommand`1">
+            <summary>
+            Simple relay command for internal use only.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:ModernWPF.Resources.CommandText">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdCancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdClose">
+            <summary>
+              Looks up a localized string similar to Close.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdCopy">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdCut">
+            <summary>
+              Looks up a localized string similar to Cut.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdDelete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdMaximize">
+            <summary>
+              Looks up a localized string similar to Maximize.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdMinimize">
+            <summary>
+              Looks up a localized string similar to Minimize.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdNo">
+            <summary>
+              Looks up a localized string similar to _No.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdNo2">
+            <summary>
+              Looks up a localized string similar to No.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdOK">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdPaste">
+            <summary>
+              Looks up a localized string similar to Paste.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdRedo">
+            <summary>
+              Looks up a localized string similar to Redo.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdRestore">
+            <summary>
+              Looks up a localized string similar to Restore Down.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdSelectAll">
+            <summary>
+              Looks up a localized string similar to Select all.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdUndo">
+            <summary>
+              Looks up a localized string similar to Undo.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdYes">
+            <summary>
+              Looks up a localized string similar to _Yes.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandText.CmdYes2">
+            <summary>
+              Looks up a localized string similar to Yes.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.Resources.CommandTextBinder">
+            <summary>
+            Provides bindable text for window commands.
+            The purpose of this is to support on-the-fly language changes.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.Resources.CommandTextBinder.UpdateCulture(System.Globalization.CultureInfo)">
+            <summary>
+            Updates the culture used for the command text. Pass null to use current culture.
+            </summary>
+            <param name="culture">The culture.</param>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandTextBinder.Instance">
+            <summary>
+            Gets the singleton <see cref="T:ModernWPF.Resources.CommandTextBinder"/> object.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.Resources.CommandTextBinder.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:System.String"/> with the specified key.
+            </summary>
+            <value></value>
+        </member>
+        <member name="E:ModernWPF.Resources.CommandTextBinder.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.ScrollViewerUI">
+            <summary>
+            Contains various attached properties for <see cref="T:System.Windows.Controls.ScrollViewer"/> using the modern theme.
+            </summary>
+        </member>
+        <member name="F:ModernWPF.ScrollViewerUI.SimulateHWheelProperty">
+            <summary>
+            Attached propert to do horizontal scroll by normal (vertical) mouse wheel if possible.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.GetSimulateHWheel(System.Windows.DependencyObject)">
+            <summary>
+            Gets the SimulateHWheel property for this object.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.SetSimulateHWheel(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the SimulateHWheel property for this object.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="value">if set to <c>true</c> then h-scroll logic will be used if possible.</param>
+        </member>
+        <member name="F:ModernWPF.ScrollViewerUI.HandleHWheelProperty">
+            <summary>
+            Attached propert to handle horizontal wheel on <see cref="T:System.Windows.Controls.ScrollViewer"/>.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.GetHandleHWheel(System.Windows.DependencyObject)">
+            <summary>
+            Gets the HandleHWheel property for this object.
+            </summary>
+            <param name="obj">The obj.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.SetHandleHWheel(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the HandleHWheel property for this object.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="value">if set to <c>true</c> then h-scroll logic will be used if possible.</param>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.GetOverContent(System.Windows.DependencyObject)">
+            <summary>
+            Gets whether the scrollbar will cover the content.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.ScrollViewerUI.SetOverContent(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets whether the scrollbar will cover the content.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value flag.</param>
+        </member>
+        <member name="F:ModernWPF.ScrollViewerUI.OverContentProperty">
+            <summary>
+            DP on whether the scrollbar will cover the content.
+            </summary>
+        </member>
+        <member name="T:ModernWPF.TextBoxUI">
+            <summary>
+            Contains various attached properties for <see cref="T:System.Windows.Controls.TextBox"/> and <see cref="T:System.Windows.Controls.PasswordBox"/> using the modern theme.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.GetShowClearButton(System.Windows.DependencyObject)">
+            <summary>
+            Gets the show clear button flag.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.SetShowClearButton(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the show clear button flag.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">the flag value.</param>
+        </member>
+        <member name="F:ModernWPF.TextBoxUI.ShowClearButtonProperty">
+            <summary>
+            The DP flag on whether to show clear text button in a textbox in modern theme.
+            </summary>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.GetLeadingElement(System.Windows.DependencyObject)">
+            <summary>
+            Gets the text box leading element.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.SetLeadingElement(System.Windows.DependencyObject,System.Windows.UIElement)">
+            <summary>
+            Sets the text box leading element.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:ModernWPF.TextBoxUI.LeadingElementProperty">
+            <summary>
+            The DP on a text box in modern theme that contains a leading element (e.g. a search icon).
+            </summary>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.GetTrailingElement(System.Windows.DependencyObject)">
+            <summary>
+            Gets the text box trailing element.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.SetTrailingElement(System.Windows.DependencyObject,System.Windows.UIElement)">
+            <summary>
+            Sets the text box trailing element.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:ModernWPF.TextBoxUI.TrailingElementProperty">
+            <summary>
+            The DP on a text box in modern theme that contains a trailing element (e.g. a search icon).
+            </summary>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.GetWatermarkText(System.Windows.DependencyObject)">
+            <summary>
+            Gets the text box water mark text.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ModernWPF.TextBoxUI.SetWatermarkText(System.Windows.DependencyObject,System.String)">
+            <summary>
+            Sets the text box water mark text.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:ModernWPF.TextBoxUI.WatermarkTextProperty">
+            <summary>
+            The DP on a text box in modern theme that shows this watermark when empty.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.TextBoxUI.HasPassword">
+            <summary>
+            Gets a value indicating whether a password box has password for watermark purposes.
+            </summary>
+            <value>
+              <c>true</c> if it has password; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:ModernWPF.TextCommands">
+            <summary>
+            Contains commands for text box types.
+            </summary>
+        </member>
+        <member name="P:ModernWPF.TextCommands.ClearTextBoxCommand">
+            <summary>
+            Gets the command that clears a <see cref="T:System.Windows.Controls.TextBox"/>.
+            </summary>
+            <value>
+            The clear text command.
+            </value>
+        </member>
+        <member name="P:ModernWPF.TextCommands.ClearPasswordBoxCommand">
+            <summary>
+            Gets the command that clears a <see cref="T:System.Windows.Controls.PasswordBox"/>.
+            </summary>
+            <value>
+            The clear text command.
+            </value>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>
